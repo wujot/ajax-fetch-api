@@ -1,0 +1,98 @@
+body {
+  margin: 0 auto;
+  background: #e6e8e6;
+}
+
+section {
+  padding: 40px 0;
+}
+
+nav {
+  background: #2b303a;
+  color: #eee5e9;
+}
+
+nav .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+nav .nav .search button {
+  margin: 25px 0;
+  background: #2b303a;
+  color: #eee5e9;
+  border: 1px solid #eee5e9;
+  border-radius: 3px;
+  margin: 0 10px;
+  transition: all .2s ease-in-out;
+}
+
+nav .nav .search button:hover {
+  background: #eee5e9;
+  color: #2b303a;
+}
+
+nav .nav .search input {
+  margin: 25px 0;
+  border-radius: 3px;
+  color: #2b303a;
+}
+
+@media screen and (max-width: 600px) {
+  nav .nav .search {
+    margin: 25px 0;
+  }
+}
+
+.countries .countryCard {
+  margin: 20px auto;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.countries .countryCard .header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.countries .countryCard .header img {
+  width: 150px;
+  height: 100px;
+  padding: 20px;
+}
+
+.countries .countryCard .header h2 {
+  margin: 20px;
+}
+
+.countries .countryCard .line {
+  border-top: 2px solid #e6e8e6;
+  border-bottom: 2px solid #e6e8e6;
+  line-height: 20px;
+}
+
+.countries .countryCard .line p {
+  margin: 3px 0;
+  line-height: 20px;
+  color: #7c7c7c;
+}
+
+.countries .countryCard .content table {
+  width: 100%;
+}
+
+.countries .countryCard .content table th {
+  width: 30%;
+  padding: 10px;
+}
+
+.countries .countryCard .content table td {
+  width: 70%;
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */
