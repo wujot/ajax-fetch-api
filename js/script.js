@@ -5,7 +5,13 @@
 	var url = 'https://restcountries.eu/rest/v2/name/';
 	var countriesList = document.getElementById('countriesList');
 
-	document.getElementById('search').addEventListener('click', searchCountries);
+	var waitTillRecieve = false;
+
+	if (waitTillRecieve == false) {
+		waitTillRecieve = true;
+		document.getElementById('search').addEventListener('click', searchCountries);
+	}
+	
 
 	function searchCountries() {
 		var countryName = document.getElementById('country-name').value;
@@ -66,6 +72,7 @@
 
 		    countriesList.appendChild(liEl);
 		});
+	    waitTillRecieve = false;
 	}
 
 })(); 
