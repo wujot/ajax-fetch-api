@@ -18,10 +18,6 @@
 	}
 
 	function showCountriesList(resp) {
-		countriesList.innerHTML = '';
-	}
-
-	function showCountriesList(resp) {
 	    countriesList.innerHTML = '';
 	    resp.forEach(function(item){
 
